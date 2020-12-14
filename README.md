@@ -1,62 +1,233 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# A-PMS
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<p align="center"><img src="./icon.png" width="100"></p>
 
-## About Laravel
+## Contents
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+-   [About](#About)
+-   [Features](#features)
+-   [Installation](#installation)
+-   [Technologies Used](#technologies-involved)
+-   [Calculating project and tasks progress.](#Calculating-project-and-tasks-progress)
+    -   [Example Calculation.](#example-calculation)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## About
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+It's apparently a web app, to help organise projects and involved tasks. Such that clients can also see the progress of the project in metrics at any time.
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   [ ] Authentication and Security.
+    -   [ ] Login.
+    -   [ ] Register.
+    -   [ ] Email Verification.
+    -   [ ] Password Recovery.
+    -   [ ] Two Factor Authentication.
+    -   [ ] Browser Sessions.
+-   [ ] User Roles.
+    -   [ ] Select user type after Registration (staff, client).
+    -   [ ] After type selection Client gets client role.
+    -   [ ] After type selection attach Staff gets no role. This means pending verification.
+-   [ ] Dashboard.
+    -   [ ] Projects.
+    -   [ ] Project Invitations.
+    -   [ ] Tasks Reminder.
+-   [ ] Notifications.
+    -   [ ] Projects.
+    -   [ ] Invitations.
+    -   [ ] Expiring tasks.
+    -   [ ] Successful tasks.
+-   [ ] Projects.
+    -   [ ] Tasks.
+        -   [ ] Invite Collaborator by email.
+        -   [ ] Assign to Developer or Team.
+        -   [ ] Adding Subtasks.
+        -   [ ] Progress Calculation.
+    -   [ ] Discussions
+        -   [ ] Post.
+        -   [ ] Reply.
+        -   [ ] Reply.
+        -   [ ] Edit - (show edited...).
+-   [ ] Teams.
+-   [ ] Direct Messaging and email.
+    -   [ ] Chat Interface.
+-   [ ] User Activities
+    -   [ ] Projects
+    -   [ ] Discussions
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Still working on it, aiming for something big.
 
-## Laravel Sponsors
+## Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+-   Clone the repo
 
-### Premium Partners
+```bash
+git clone https://github.com/anubra266/project-management.git
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+-   Install PHP dependencies
 
-## Contributing
+```bash
+composer install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+-   Install npm dependencies
 
-## Code of Conduct
+```bash
+npm install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+-   Copy Environment File
 
-## Security Vulnerabilities
+```bash
+cp .env.example .env
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+-   Generate App key
+
+```bash
+php artisan key:generate
+```
+
+-   Migrate Database
+
+```bash
+php artisan migrate --seed
+```
+
+-   Serve App
+
+```bash
+php artisan serve
+```
+
+## Technologies Involved
+
+-   **[Laravel](https://laravel.com/)**
+-   **[VueJs](https://vuejs.com/)**
+-   **[InertiaJs](https://inertiajs.com/)**
+-   **[AlpineJs](https://github.com/alpinejs/alpine)**
+
+*   **[Jetstream](https://jetstream.laravel.com)**
+*   **[Fortify](https://github.com/laravel/fortify)**
+*   **[Sanctum](https://laravel.com/docs/8.x/sanctum)**
+*   **[Spatie](https://spatie.be/docs/laravel-permission)**
+    <br />
+    <br />
+    <br />
+
+## Calculating project and tasks progress.
+
+Project progress is average Task scores.
+
+## Task Properties
+
+-   Weight (1-10) - w
+-   State - s (100)
+    -   Todo - 5
+    -   Progress - 80
+    -   Testing - 10
+    -   Complete - 5
+    -   Cancelled - 0
+-   Priority (low, normal, medium, high, highest) - p
+-   Due Date - dd (100)
+
+## Sub tasks
+
+A Task with subtasks is in progress if at least one of the subtasks is in progress, and is completed only if all it's subtasks are completed.
+
+## Task score
+
+-   Initial score -> 1 = 1.
+-   Weight Score = Score \* weight -> 1w.
+-   State var = State Cumm / 100 -> s / 100
+    -   If task has Subtasks. Progress is shared among subtasks.
+        -   Variables
+            -   Subtasks number -> n
+            -   Completed subtasks -> c
+        -   Task progress -> c / n \* 80
+    -   progress = subtasks ? 80 : c / n \* 80
+-   State Score = Weight Score / State var -> 1w \* s / 100.
+-   Total Score = s / w
+    <br />
+    <br />
+    <br />
+    <br />
+
+# Example Calculation
+
+### Tasks
+
+| Id  | Title         | Weight |     State |
+| --- | :------------ | :----: | --------: |
+| 1   | Learn React   |   8    | completed |
+| 2   | Learn Vue     |   10   |  progress |
+| 3   | Learn Svelte  |   5    |      todo |
+| 4   | Learn Angular |   3    | cancelled |
+
+<br />
+<br />
+
+### Sub Tasks
+
+**Todo:** Would need an eloquent plan on managing task - subtask relationship, as well as assigned user.
+
+| Id  | Title            | Weight | State     | task |
+| --- | :--------------- | :----: | :-------- | ---: |
+| 1   | Learn Vue UI     |   10   | completed |    2 |
+| 2   | Learn Vuex       |   8    | progress  |    2 |
+| 3   | Learn Vue Router |   5    | todo      |    2 |
+
+<br />
+<br />
+
+## Calculation
+
+Formular -> 1w \* s / 100
+
+-   Task 1.
+
+```js
+w = 8
+s = 5 + 80 + 10 + 5 = 100
+result = 8 * 100 / 100 = 8
+Total -> 8 / 8
+```
+
+-   Task 2.
+
+```Js
+w = 10
+// Has Subtasks -> 1 Complete out of 3
+s = 5 + progress = 5 + (1 / 3 * 80) = 31.7
+result = 10 * 31.7 / 100 = 8
+Total -> 3 / 10
+```
+
+-   Task 3.
+
+```js
+w = 5
+s = 5 = 5
+result = 5 * 5 / 100 = 0.25
+Total -> 0.25 / 5
+```
+
+-   Task 4.
+
+```js
+/* Cancelled Task is excluded from Calculation */
+```
+
+## Average Score
+
+```js
+Progress = Total Score / Total Possible Score * 100
+Total Score = 8 + 3 + 0.25 = 11.25
+Total Possible Score = 8 + 10 + 5 = 23
+Progress = 11.25 / 23 * 100 = 48.9%
+```
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
