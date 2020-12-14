@@ -22,8 +22,6 @@ A Boilerplate for the Laravel Inertia Vue Stack with Auth by Fortify.
 -   Profile Update.
 -   Two factor Verification.
 
-Still working on it, aiming for something big.
-
 ## Installation
 
 -   Clone the repo
