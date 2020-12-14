@@ -26,6 +26,7 @@ It's apparently a web app, to help organise projects and involved tasks. Such th
 
 -   [ ] Authentication and Security.
     -   [x] Login. 
+    -   [x] Logout. 
     -   [ ] Register.
     -   [ ] Email Verification.
     -   [ ] Password Recovery.
