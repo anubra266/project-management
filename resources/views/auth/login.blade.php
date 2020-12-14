@@ -11,20 +11,25 @@
                     Log in to your account
                 </h1>
                 @if (session('status'))
-                <div>
-                    {{ session('status') }}
+                <div class="space-y-2">
+                    <div class="alert bg-primary-light text-primary" role="alert"> {{ session('status') }}</div>
                 </div>
                 @endif
 
                 @if ($errors->any())
-                <div>
-                    <div>{{ __('Whoops! Something went wrong.') }}</div>
-
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
+                <div class="space-y-2">
+                    <div class="alert text-red-700 bg-red-100" role="alert"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                        </svg> <span>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </span></div>
                 </div>
                 @endif
                 <form class="mb-8 space-y-4" method="POST" action="{{ route('login') }}">
