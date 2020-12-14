@@ -26,6 +26,7 @@
     "dependencies": {
         "@inertiajs/inertia": "^0.7.0",
         "@inertiajs/inertia-vue": "^0.4.3",
+        "@inertiajs/progress": "^0.2.3",
         "autoprefixer": "^9.8.6",
         "postcss": "^7.0.35",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
