@@ -1,11 +1,14 @@
-import { App, plugin } from "@inertiajs/inertia-vue";
 import Vue from "vue";
+import { App, plugin } from "@inertiajs/inertia-vue";
 import { InertiaProgress } from "@inertiajs/progress";
+import AtComponents from "at-ui";
+import "at-ui-style";
+
+Vue.use(AtComponents);
+Vue.use(plugin);
+Vue.mixin({ methods: { route } });
 
 InertiaProgress.init();
-
-Vue.use(plugin);
-Vue.mixin({ methods: { route }});
 
 const el = document.getElementById("app");
 
