@@ -10,6 +10,7 @@
 
 <body>
     @inertia
+    <script src="{{ asset('kutty.js') }}"></script>
 </body>
 
 </html>
