@@ -2,7 +2,6 @@
     <section class="bg-gray-100">
         <div class="container px-0 py-20 mx-auto sm:px-4">
             <a href="/" title="PMS Login" class="flex items-center justify-start sm:justify-center">
-                <x-logo></x-logo>
                 <span class="sr-only">PMS</span>
             </a>
             <div
@@ -65,17 +64,19 @@
                             <span class="sr-only">Continue with</span> Google
                         </a>
                     </div>
+
                 </div>
             </div>
             <p class="mb-4 text-xs text-center text-gray-400">
-                <a href="#" class="text-purple-200 underline hover:text-white">Create an account</a>
+                <a href="{{ route('register') }}" class="text-purple-900 underline hover:text-white">Create an
+                    account</a>
                 ·
                 @if (Route::has('password.request'))
-                <a href="{{ route('password.request') }}" class="text-purple-200 underline hover:text-white">Forgot
+                <a href="{{ route('password.request') }}" class="text-purple-900 underline hover:text-white">Forgot
                     password</a>
                 @endif
                 ·
-                <a href="#" class="text-purple-200 underline hover:text-white">Privacy & Terms</a>
+                <a href="#" class="text-purple-900 underline hover:text-white">Privacy & Terms</a>
             </p>
         </div>
     </section>
