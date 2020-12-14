@@ -46,6 +46,9 @@
                     <input class="form-input" type="password" placeholder="••••••••" name="password_confirmation"
                         required autocomplete="new-password" />
                 </label>
+                <div class="flex items-center justify-between">
+                    <a href="{{route('login')}}" class="w-full btn btn-sm btn-link sm:w-auto">Already have an account?</a>
+                </div>
                 <input type="submit" class="w-full btn btn-primary btn-lg" value="Sign Up" />
             </form>
             <p class="my-8 text-xs font-medium text-center text-gray-700">
