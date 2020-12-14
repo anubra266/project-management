@@ -50,6 +50,7 @@
                             <input type="checkbox" class="form-checkbox" name="remember" />
                             <span class="block ml-2 text-xs font-medium text-gray-700 cursor-pointer">Remember me</span>
                         </label>
+                        <a href="{{route('register')}}" class="w-full btn btn-sm btn-link sm:w-auto">Register?</a>
                     </div>
                     <input type="submit" class="w-full py-3 mt-1 btn btn-primary" value="Login" />
                 </form>
