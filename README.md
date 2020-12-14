@@ -21,16 +21,18 @@ It's apparently a web app, to help organise projects and involved tasks. Such th
 -   [ ] Share Data (EX. Sessions) to views (Try Dot Notation)
 -   [ ] Handle 419 errors
 -   [ ] Custom error pages
+-   [ ] Error Message for expired email verify links
+-   [ ] Queue Emails
 
 ## Features
 
 -   [ ] Authentication and Security.
-    -   [x] Login. 
-    -   [ ] Google OAuthLogin. 
-    -   [x] Logout. 
-    -   [ ] Register.
-    -   [ ] Email Verification.
-    -   [ ] Password Recovery.
+    -   [x] Login.
+    -   [ ] Google OAuthLogin.
+    -   [x] Logout.
+    -   [x] Register.
+    -   [x] Email Verification.
+    -   [x] Password Recovery.
     -   [ ] Two Factor Authentication.
     -   [ ] Browser Sessions.
 -   [ ] User Roles.
