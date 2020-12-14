@@ -1,6 +1,6 @@
 # LIVA
 
-<p align="center"><img src="./icon.png" width="100"></p>
+<p align="center"><img src="./favicon.png" width="100"></p>
 
 ## Contents
 
