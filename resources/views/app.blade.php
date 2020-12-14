@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    @routes
     @inertia
     <script src="{{ asset('kutty.js') }}"></script>
 </body>
