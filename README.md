@@ -6,6 +6,7 @@
 
 -   [About](#About)
 -   [Features](#features)
+-   [Todos](#todos)
 -   [Installation](#installation)
 -   [Technologies Used](#technologies-involved)
 -   [Calculating project and tasks progress.](#Calculating-project-and-tasks-progress)
@@ -14,6 +15,12 @@
 ## About
 
 It's apparently a web app, to help organise projects and involved tasks. Such that clients can also see the progress of the project in metrics at any time.
+
+## Todos
+
+-   [ ] Share Data (EX. Sessions) to views (Try Dot Notation)
+-   [ ] Handle 419 errors
+-   [ ] Custom error pages
 
 ## Features
 
