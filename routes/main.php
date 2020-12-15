@@ -8,11 +8,7 @@ $router->get('/', function () {
 });
 
 $router->get('/home', function () {
-    return view('home');
-    return Inertia::render('Welcome');
+    return Inertia::render('Profile');
 })
     ->name('home')
     ->middleware(['auth', 'verified']);
-
-
-    

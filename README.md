@@ -35,6 +35,11 @@ It's apparently a web app, to help organise projects and involved tasks. Such th
     -   [x] Password Recovery.
     -   [ ] Two Factor Authentication.
     -   [ ] Browser Sessions.
+-   [ ] Views.
+    -   [ ] Profile and Preferences.
+        -   [ ] Basic Info.
+        -   [ ] Notifications.
+        -   [ ] Security.
 -   [ ] User Roles.
     -   [ ] Select user type after Registration (staff, client).
     -   [ ] After type selection Client gets client role.
