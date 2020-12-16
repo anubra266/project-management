@@ -3,10 +3,16 @@ import { App, plugin } from "@inertiajs/inertia-vue";
 import { InertiaProgress } from "@inertiajs/progress";
 import AtComponents from "at-ui";
 import "at-ui-style";
+import ClickAway from "@/Mixins/ClickAway";
 
 Vue.use(AtComponents);
 Vue.use(plugin);
-Vue.mixin({ methods: { route } });
+Vue.mixin({
+    methods: { route },
+    directives: {
+        "click-away": ClickAway
+    }
+});
 
 InertiaProgress.init();
 
