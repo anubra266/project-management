@@ -3,6 +3,9 @@ import { App, plugin } from "@inertiajs/inertia-vue";
 import { InertiaProgress } from "@inertiajs/progress";
 import AtComponents from "at-ui";
 import "at-ui-style";
+
+import SiteLayout from "@/components/SiteLayout";
+
 import ClickAway from "@/Mixins/ClickAway";
 
 Vue.use(AtComponents);
@@ -24,7 +27,17 @@ new Vue({
             props: {
                 initialPage: JSON.parse(el.dataset.page),
                 resolveComponent: name =>
-                    import(`@/Pages/${name}`).then(module => module.default)
+                    import(`@/Pages/${name}`)
+                        // .then(module => module.default)
+                        .then(({ default: page }) => {
+                            if (
+                                page.layout === undefined &&
+                                !name.startsWith("NoLayout/")
+                            ) {
+                                page.layout = SiteLayout;
+                            }
+                            return page;
+                        })
             }
         })
 }).$mount(el);
